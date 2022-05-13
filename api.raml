@@ -1,0 +1,72 @@
+#%RAML 1.0
+types:
+  milestone2_datatype_saif:
+    properties:
+      Userdetails:
+        items:
+          properties:
+            post_id:
+              example: "2003"
+              type: string
+            id:
+              example: "1978"
+              type: string
+            name:
+              example: Bhaaswar Pothuvaal III
+              type: string
+  milestone3_datatype_saif:
+    properties:
+      Name:
+        example: Gorakhanatha Chaturvedi
+        type: string
+      Status:
+        example: active
+        type: string
+      Gender:
+        example: female
+        type: string
+  milestone1_datatype_saif:
+    properties:
+      id:
+        example: "2482"
+        type: string
+      name:
+        example: Kartik Kocchar
+        type: string
+      email:
+        example: kartik_kocchar@rutherford.io
+        type: string
+      gender:
+        example: female
+        type: string
+      status:
+        example: inactive
+        type: string
+title: Major2_Sk Saif Ali
+/milestone2_Saif:
+  post:
+    responses:
+      "201": {}
+    queryParameters:
+      m2:
+        type: milestone2_datatype_saif
+/milestone3_Saif:
+  get:
+    queryParameters:
+      m3:
+        type: milestone3_datatype_saif
+    responses:
+      "200": {}
+/milestone1_Saif:
+  get:
+    responses:
+      "200": {}
+    securedBy: []
+    queryParameters:
+      m1:
+        type: milestone1_datatype_saif
+mediaType:
+  - application/json
+version: v1
+protocols:
+  - HTTP

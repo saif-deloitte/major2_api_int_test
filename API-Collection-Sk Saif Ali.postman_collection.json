@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "c4ae39eb-a173-4135-9c3b-5943db19fbd5",
+		"name": "API-Collection-Sk Saif Ali",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "m3_get",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "m3_post",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "m5_put",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

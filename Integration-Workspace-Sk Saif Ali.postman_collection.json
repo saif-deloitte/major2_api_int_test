@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "c5e94144-d7cb-4802-a739-681de5e3d21c",
+		"name": "Integration-Workspace-Sk Saif Ali",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "m2_inactive_females",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "major2sksaifali-pxhz.us-e2.cloudhub.io/api",
+					"host": [
+						"major2sksaifali-pxhz",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "m3_specific_post_id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"post_id\": 2003 }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "major2sksaifali-pxhz.us-e2.cloudhub.io/new",
+					"host": [
+						"major2sksaifali-pxhz",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "m4_sample_response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://hu-major-assignment.us-e2.cloudhub.io/userid",
+					"protocol": "http",
+					"host": [
+						"hu-major-assignment",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"userid"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
